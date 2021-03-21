@@ -24,9 +24,9 @@ body {
   background-size: contain;
 }
 
-.navbar-brand {
+.navbar-brand a {
   font-size: 25px;
-  line-height: 1.7;
+  line-height: 1.2;
   color: gold;
   font-family: "Pacifico", cursive;
 }
@@ -37,11 +37,14 @@ body {
   margin: 0;
   font-size: 12px;
   list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .nav-menu a {
   color: white;
   text-transform: uppercase;
+  margin: 10px 0;
 }
 
 .navigation li {
@@ -72,6 +75,7 @@ body {
   display: block;
   margin: 5px;
   padding: 2px;
+  padding-top: 5px;
 }
 
 /* 2 level */
@@ -87,5 +91,47 @@ body {
 }
 
 .navigation li ul a:hover {
-  color: green;
+  color: #979393;
+}
+
+/* Services */
+.services {
+  width: 100%;
+  height: 200px;
+}
+
+/* Portfolio */
+.portfolio {
+  width: 100%;
+  height: 200px;
+}
+
+/* Footer */
+footer {
+  margin: 48px 0;
+  display: flex;
+  bottom: 0;
+  color: #313131;
+  font-size: 12px;
+}
+
+footer div {
+  border: 1px solid black;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-bottom: 10px;
+  border: 1px solid black;
+}
+
+footer li {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+i {
+  font-size: 20px;
+  padding-right: 10px;
 }
