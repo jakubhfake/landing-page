@@ -1,0 +1,16 @@
+/* Varibles */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: white;
+  background-image: url("https://i.postimg.cc/YqwN3xyB/Home-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

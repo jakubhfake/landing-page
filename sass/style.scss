@@ -1,0 +1,28 @@
+/* Varibles */
+$font-family1: 'Allura', cursive;
+$font-family2: 'Grand Hotel', cursive;
+$font-family3: 'Leckerli One', cursive;
+$font-logo: 'Pacifico', cursive;
+
+$color-text: white;
+$color-one: red;
+$color-two: green;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-text;
+    background-image: url("https://i.postimg.cc/YqwN3xyB/Home-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+}
