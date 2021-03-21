@@ -12,11 +12,10 @@ body {
   line-height: 1.7;
   color: white;
   background-image: url("https://i.postimg.cc/YqwN3xyB/Home-background.jpg");
-  background-position: center;
+  background-position: top;
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-position: top;
 }
 
 /* Navigation */
@@ -26,7 +25,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.7;
   color: gold;
   font-family: "Pacifico", cursive;
@@ -49,7 +48,6 @@ body {
   position: relative;
   display: inline-block;
   margin: 0;
-  text-align: center;
 }
 
 .navigation a {
@@ -57,31 +55,34 @@ body {
   padding: 0 10px;
 }
 
-.navigation a:hover {
+.nav-menu a:hover {
   color: gold;
 }
 
-.navigation ul ul li {
+.nav-menu li ul {
+  position: absolute;
+  display: none;
+  background: gold;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.nav-menu li:hover ul {
+  display: block;
+  margin: 5px;
+  padding: 2px;
+}
+
+/* 2 level */
+.nav-menu ul li {
   display: block;
   margin: 5px;
 }
 
-.navigation li ul {
-  position: absolute;
-  display: none;
-  background: white;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.navigation li:hover ul {
+.nav-menu ul li a {
   display: block;
-  text-align: left;
-}
-
-.navigation li ul a {
-  display: block;
-  color: red;
+  color: black;
   padding: 0 10px;
 }
 

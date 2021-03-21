@@ -23,12 +23,10 @@ body {
     line-height: 1.7;
     color: $color-text;
     background-image: url("https://i.postimg.cc/YqwN3xyB/Home-background.jpg");
-    background-position: center;
+    background-position: top;
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
-    background-position: top;
-    
 }
 
 /* Navigation */
@@ -39,7 +37,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.7;
     color: gold;
     font-family: $font-logo;
@@ -60,7 +58,6 @@ body {
     position: relative;
     display: inline-block;
     margin: 0;
-    text-align: center;
 }
 
 .navigation a {
@@ -68,36 +65,40 @@ body {
     padding: 0 10px;
 }
 
-.navigation a:hover {
+.nav-menu a:hover {
     color: $color-brand;
 }
 
-.navigation ul ul li {
-    display: block;
-    margin: 5px;
-}
-
-.navigation {
+.nav-menu {
     li {
         ul {
             position: absolute;
             display: none;
-            background: white;
+            background: $color-brand;
             left: 50%;
             transform: translateX(-50%);
+            z-index: 1;
+            
         }
     }
 }
 
-.navigation li:hover ul {
+.nav-menu li:hover ul {
     display: block;
-    text-align: left;
-    
+    margin: 5px;
+    padding: 2px;
+  
 }
 
-.navigation li ul a {
+/* 2 level */
+
+.nav-menu ul li {
     display: block;
-    color: $color-one;
+    margin: 5px;
+}
+.nav-menu ul li a {
+    display: block;
+    color: black;
     padding: 0 10px;
 }
 
