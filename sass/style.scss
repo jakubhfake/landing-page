@@ -1,15 +1,17 @@
 /* Varibles */
-$font-family1: 'Allura', cursive;
-$font-family2: 'Grand Hotel', cursive;
-$font-family3: 'Leckerli One', cursive;
+
+/*$font-family1: 'Allura', cursive;
+$font-family2: 'Grand Hotel', cursive;*/
+
 $font-logo: 'Pacifico', cursive;
+$font-header-3: 'Noto Serif', serif;
 $font-header: 'Open Sans', sans-serif;
 
 $color-text: white;
 $color-brand:gold;
 $color-one: red;
 $color-two: rgb(151, 147, 147);
-$color-footer: rgb(49, 49, 49);
+$color-dark: rgb(49, 49, 49);
 
 /* Global */
 
@@ -24,54 +26,77 @@ body {
     height: 700px;
     line-height: 1.7;
     color: $color-text;
-    background-image: url("https://i.postimg.cc/YqwN3xyB/Home-background.jpg");
-    background-position: top;
-    background-size: contain;
-    background-origin: border-box;
+    background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
+
+.navigation a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    padding: 16px;
+    border-radius: 10px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+    border-width: 2px;
+    border-style: solid;
 
 /* Navigation */
 
 .navigation {
-    padding: 36px 0;
-    background-size: contain;
+    padding: 50px 0 6px 0;
+    /*background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
+    background-position: top;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;*/
 }
 
 .navbar-brand {
-   
+   color: black;
     
 }
 .navbar-brand a {
-    font-size: 25px;
+    font-size: 28px;
     line-height: 1.2;
     color: gold;
     font-family: $font-logo;
+    padding-left: 3em;
 }
 
 /* 1 level */
 .nav-menu {
     padding: 0;
     margin: 0;
-    font-size: 12px;
+    font-size: 18px;
     list-style-type: none;
     font-family: $font-header;
     font-weight: 700;
+    float: right;
 }
+
 .nav-menu a {
     color: $color-text;
     text-transform: uppercase;
     margin: 10px 0;
+    padding: 20px 18px;
 }
-.navigation li {
+.nav-menu li {
     position: relative;
     display: inline-block;
-    margin: 0;
-}
 
-.navigation a {
-    text-decoration: none;
-    padding: 0 10px;
 }
 
 .nav-menu a:hover {
@@ -116,6 +141,36 @@ body {
     color: $color-two;
 }
 
+/* Header */
+ header {
+    position: relative;
+    height: 615px;
+    padding-top: 175px;
+    /*background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
+    background-position: top;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;*/
+ }
+
+ .header-text {
+    text-align: center;
+ }
+
+ .header-text h3 {
+     font-family: $font-header-3;
+     font-size: 40px;
+     margin: 0;
+ }
+
+ .header-text h1 {
+    text-transform: uppercase;
+    font-family: $font-header;
+    font-size: 78px;
+    margin: 0;
+ }
+
 /* Services */
 
 .services {
@@ -123,7 +178,10 @@ body {
     height: 400px;
 }
 
-.services
+.services {
+    color: $color-dark;
+    text-align: center;
+}
 
 /* Portfolio */
 
@@ -145,7 +203,7 @@ footer {
 footer .row {
     text-align: center;
     margin: 10px 0;
-    color: $color-footer;
+    color: $color-dark;
 }
 
 footer ul {
@@ -165,10 +223,15 @@ footer li {
 i {    
     font-size: 20px;
     padding: 0 2px;
-    color: $color-footer;
+    color: $color-dark;
 }
 
 @media (max-width: 767px) {
+
+    .nav-menu {
+        font-size: 8px;
+    }
+
     footer div {
         text-align: center;
     }
