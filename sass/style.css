@@ -11,7 +11,7 @@ body {
   height: 700px;
   line-height: 1.7;
   color: white;
-  /*background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");*/
+  background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -222,13 +222,28 @@ header {
 }
 
 /* Portfolio */
+
+.portfolio {
+  background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
+}
+
+.portfolio h2{
+  background: none;
+}
+
+.grid {
+  background: none;
+}
+
 /*.grid {
     display: grid;
     margin: 10px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 100px 80px;
 }*/
+
 /* Footer */
+
 footer {
   margin: 48px 0;
   display: flex;
@@ -255,7 +270,7 @@ footer li {
   font-size: 0;
 }
 
-i {
+footer i {
   font-size: 20px;
   padding: 0 2px;
   color: #313131;
