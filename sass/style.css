@@ -11,7 +11,7 @@ body {
   height: 700px;
   line-height: 1.7;
   color: white;
-  background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
+  /*background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -34,6 +34,26 @@ body {
   cursor: pointer;
   background-size: 300%;
   transition: all 1s;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 100px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+  font-family: "Inconsolata", sans-serif;
+}
+
+p {
+  font-family: "Noto Serif", serif;
+  margin: auto;
 }
 
 /* Navigation */
@@ -120,7 +140,7 @@ body {
 /* Header */
 header {
   position: relative;
-  height: 615px;
+  height: 625px;
   padding-top: 175px;
   /*background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
     background-position: top;
@@ -164,21 +184,50 @@ header {
 
 /* Services */
 .services {
-  width: 100%;
-  height: 400px;
-}
-
-.services {
   color: #313131;
+  /*font-family: $font-menu;*/
   text-align: center;
 }
 
-/* Portfolio */
-.portfolio {
-  width: 100%;
-  height: 300px;
+.services h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 100px;
 }
 
+/*.services p {
+    font-family: $font-header-3;
+    margin: auto;
+}*/
+/*.serv-item h4 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}*/
+.serv-sign {
+  width: 70px;
+  height: 70px;
+  border: 5px solid;
+  border-color: gold;
+  border-radius: 35px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.serv-sign i {
+  color: gold;
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+/* Portfolio */
+/*.grid {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 100px 80px;
+}*/
 /* Footer */
 footer {
   margin: 48px 0;
