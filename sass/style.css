@@ -11,9 +11,9 @@ body {
   height: 700px;
   line-height: 1.7;
   color: white;
-  background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
 }
 
 .navigation a {
@@ -59,11 +59,11 @@ p {
 /* Navigation */
 .navigation {
   padding: 40px 0 16px 0;
-  /*background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
-    background-position: top;
-    background-size: cover;
-    background-origin: border-box;
-    background-repeat: no-repeat;*/
+  background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
+  background-position: top;
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .navbar-brand {
@@ -142,12 +142,12 @@ header {
   position: relative;
   height: 625px;
   padding-top: 175px;
-  /*background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
-    background-position: top;
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    background-repeat: no-repeat;*/
+  background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
+  background-position: top;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .header-text {
@@ -197,14 +197,18 @@ header {
   margin-top: 100px;
 }
 
-/*.services p {
-    font-family: $font-header-3;
-    margin: auto;
-}*/
-/*.serv-item h4 {
-    font-size: 20px;
-    margin: 20px 0 10px 0;
-}*/
+.services .row {
+  margin: 0 40px;
+}
+
+.serv-item {
+  padding: 0 30px;
+}
+
+.serv-item p {
+  text-align: justify;
+}
+
 .serv-sign {
   width: 70px;
   height: 70px;
@@ -224,6 +228,7 @@ header {
 /* Portfolio */
 .portfolio {
   background-color: #f5efef;
+  padding-bottom: 100px;
 }
 
 .grid {
@@ -247,7 +252,7 @@ header {
 
 /* Footer */
 footer {
-  margin: 48px 0;
+  padding: 10px 0;
   display: flex;
   bottom: 0;
   font-size: 12px;
@@ -257,6 +262,10 @@ footer .row {
   text-align: center;
   margin: 10px 0;
   color: #202020;
+}
+
+footer .row p {
+  padding-top: 15px;
 }
 
 footer ul {
@@ -272,8 +281,8 @@ footer li {
   font-size: 0;
 }
 
-i {
-  font-size: 20px;
+footer i {
+  font-size: 30px;
   padding: 0 2px;
   color: #202020;
 }
