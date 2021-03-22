@@ -1,17 +1,17 @@
 /* Varibles */
 
-/*$font-family1: 'Allura', cursive;
-$font-family2: 'Grand Hotel', cursive;*/
-
 $font-logo: 'Pacifico', cursive;
 $font-header-3: 'Noto Serif', serif;
-$font-header: 'Open Sans', sans-serif;
+$font-menu: 'Open Sans', sans-serif;
+$font-text: 'Inconsolata', sans-serif;
 
 $color-text: white;
 $color-brand:gold;
 $color-one: red;
 $color-two: rgb(151, 147, 147);
 $color-dark: rgb(49, 49, 49);
+
+$transition: all 1s;
 
 /* Global */
 
@@ -39,19 +39,18 @@ body {
 .btn {
     position: relative;
     display: inline-block;
-    min-width: 160px;
-    padding: 16px;
-    border-radius: 10px;
-    font-family: $font-text;
-    font-size: 16px;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: $font-menu;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-position: 100% 0;
     background-size: 300%;
     transition: $transition;
-    border-width: 2px;
-    border-style: solid;
+    
+}
 
 /* Navigation */
 
@@ -82,7 +81,7 @@ body {
     margin: 0;
     font-size: 18px;
     list-style-type: none;
-    font-family: $font-header;
+    font-family: $font-menu;
     font-weight: 700;
     float: right;
 }
@@ -166,10 +165,27 @@ body {
 
  .header-text h1 {
     text-transform: uppercase;
-    font-family: $font-header;
+    font-family: $font-menu;
     font-size: 78px;
     margin: 0;
  }
+
+/* Header button */
+
+.btn-one {
+    text-transform: uppercase;
+    font-weight: 700;
+    background-position: 100% 0;
+    background-image: linear-gradient(90deg, $color-text 50%, $color-brand 50%);
+    color: $color-text;
+    margin-top: 10px;
+}
+    
+.btn-one:hover {
+    background-position: 0 100%;
+    color: $color-dark;
+}
+
 
 /* Services */
 

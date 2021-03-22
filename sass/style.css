@@ -1,6 +1,4 @@
 /* Varibles */
-/*$font-family1: 'Allura', cursive;
-$font-family2: 'Grand Hotel', cursive;*/
 /* Global */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -21,6 +19,21 @@ body {
 .navigation a {
   text-decoration: none;
   padding: 0;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-size: 300%;
+  transition: all 1s;
 }
 
 /* Navigation */
@@ -132,6 +145,21 @@ header {
   font-family: "Open Sans", sans-serif;
   font-size: 78px;
   margin: 0;
+}
+
+/* Header button */
+.btn-one {
+  text-transform: uppercase;
+  font-weight: 700;
+  background-position: 100% 0;
+  background-image: linear-gradient(90deg, white 50%, gold 50%);
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-one:hover {
+  background-position: 0 100%;
+  color: #313131;
 }
 
 /* Services */
