@@ -7,11 +7,13 @@
 body {
   margin: 0;
   font-size: 16px;
+  width: 100%;
+  height: 700px;
   line-height: 1.7;
   color: white;
-  /*background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
+  background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
   background-size: cover;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 }
 
 .navigation a {
@@ -55,14 +57,13 @@ p {
 }
 
 /* Navigation */
-
 .navigation {
   padding: 40px 0 16px 0;
-  background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
+  /*background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
     background-position: top;
     background-size: cover;
     background-origin: border-box;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .navbar-brand {
@@ -141,12 +142,12 @@ header {
   position: relative;
   height: 625px;
   padding-top: 175px;
-  background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
+  /*background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
     background-position: top;
     background-size: cover;
     background-position: center;
     background-origin: border-box;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .header-text {
@@ -178,15 +179,14 @@ header {
 
 .btn-one:hover {
   background-position: 0 100%;
-  color: #313131;
+  color: #202020;
 }
 
 /* Services */
 .services {
-  color: #313131;
+  color: #202020;
   /*font-family: $font-menu;*/
   text-align: center;
-  margin: 0 30px;
 }
 
 .services h2 {
@@ -201,9 +201,10 @@ header {
     font-family: $font-header-3;
     margin: auto;
 }*/
-.serv-item {
-    padding: 0;
-}
+/*.serv-item h4 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}*/
 .serv-sign {
   width: 70px;
   height: 70px;
@@ -221,20 +222,30 @@ header {
 }
 
 /* Portfolio */
-
 .portfolio {
-   background-color: red;
+  background-color: #f5efef;
 }
 
-/*.grid {
-    display: grid;
-    margin: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 100px 80px;
-}*/
+.grid {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, auto));
+  grid-gap: 30px;
+}
+
+.port-item {
+  background-color: white;
+}
+
+.port-text h4 {
+  margin: 0;
+}
+
+.port-item img {
+  width: 100%;
+}
 
 /* Footer */
-
 footer {
   margin: 48px 0;
   display: flex;
@@ -245,7 +256,7 @@ footer {
 footer .row {
   text-align: center;
   margin: 10px 0;
-  color: #313131;
+  color: #202020;
 }
 
 footer ul {
@@ -261,10 +272,10 @@ footer li {
   font-size: 0;
 }
 
-footer i {
+i {
   font-size: 20px;
   padding: 0 2px;
-  color: #313131;
+  color: #202020;
 }
 
 @media (max-width: 767px) {

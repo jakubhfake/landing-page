@@ -9,7 +9,9 @@ $color-text: white;
 $color-brand:gold;
 $color-one: red;
 $color-two: rgb(151, 147, 147);
-$color-dark: rgb(49, 49, 49);
+$color-dark: rgb(32, 32, 32);
+$color-port: rgb(245, 239, 239);
+$color-light: white;
 
 $transition: all 1s;
 
@@ -26,7 +28,7 @@ body {
     height: 700px;
     line-height: 1.7;
     color: $color-text;
-    /*background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");*/
+    background-image: url("https://i.postimg.cc/DZKtNRMF/zadanie-golden-1440.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -212,6 +214,7 @@ p {
     color: $color-dark;
     /*font-family: $font-menu;*/
     text-align: center;
+
 }
 
 .services h2 {
@@ -250,14 +253,28 @@ p {
 
 /* Portfolio */
 
+.portfolio {
+    background-color: $color-port;
+}
 
-
-/*.grid {
+.grid {
     display: grid;
-    margin: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 100px 80px;
-}*/
+    margin: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(290px ,auto));
+    grid-gap: 30px;
+}
+
+.port-item {
+    background-color: $color-light;
+}
+
+.port-text h4 {
+    margin: 0;
+}
+
+.port-item img {
+    width: 100%;
+}
 
 /* Footer */
   
