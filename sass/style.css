@@ -38,7 +38,7 @@ body {
 
 /* Navigation */
 .navigation {
-  padding: 50px 0 6px 0;
+  padding: 40px 0 16px 0;
   /*background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
     background-position: top;
     background-size: cover;
@@ -48,6 +48,7 @@ body {
 
 .navbar-brand {
   color: black;
+  padding-left: 90px;
 }
 
 .navbar-brand a {
@@ -55,7 +56,6 @@ body {
   line-height: 1.2;
   color: gold;
   font-family: "Pacifico", cursive;
-  padding-left: 3em;
 }
 
 /* 1 level */
