@@ -325,10 +325,16 @@ footer i {
     color: $color-dark;
 }
 
+@media (max-width: 374px) {
+    .navbar-brand a {
+       font-size: 20px;
+    }
+}
+
 @media (max-width: 767px) {
 
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     h2 {
@@ -348,12 +354,38 @@ footer i {
     }
 
     .nav-menu {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .nav-menu a {
         margin: 5px 0;
         padding: 5px 2px;
+   }
+
+    header {
+        position: relative;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-image: url(https://i.postimg.cc/YqRS8cpB/home.jpg);
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+    }
+    .btn {
+        min-width: 200px;
+        padding: 15px;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+
+    .btn-one {
+        text-transform: uppercase;
+        font-weight: 700;
+        background-position: 100% 0;
+        background-image: linear-gradient(90deg, white 50%, gold 50%);
+        color: white;
+        margin-top: 30px;
     }
 
     footer div {
@@ -382,6 +414,6 @@ footer i {
     }
 }
 
-@media (max-width: 767px) {
-
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Mam nadzieje. ze w wolnej chwili wroce do tego i dopisze kod */
 }
