@@ -69,13 +69,15 @@ p {
   font-family: "Noto Serif", serif;
   margin: auto;
   color: #979393;
+  font-size: 15px;
 }
 
 /* Navigation */
 .navigation {
-  padding: 40px 0 16px 0;
+  padding: 30px 0 10px 0;
   background-image: url("https://i.postimg.cc/sxR2HsQs/navigation.jpg");
   background-position: top;
+  background-position: center;
   background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -155,10 +157,9 @@ p {
 /* Header */
 header {
   position: relative;
-  height: 625px;
-  padding-top: 175px;
+  padding-top: 190px;
+  padding-bottom: 190px;
   background-image: url("https://i.postimg.cc/YqRS8cpB/home.jpg");
-  background-position: top;
   background-size: cover;
   background-position: center;
   background-origin: border-box;
@@ -176,7 +177,7 @@ header {
   background-position: 100% 0;
   background-image: linear-gradient(90deg, white 50%, gold 50%);
   color: white;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .btn-one:hover {
@@ -236,6 +237,15 @@ header {
   padding-bottom: 15px;
 }
 
+.port-item:hover {
+  transform: scale(1.1);
+}
+
+.port-item a {
+  text-decoration: none;
+  color: #202020;
+}
+
 .port-item h4 {
   margin: 20px 0 10px 0;
   line-height: 0;
@@ -250,7 +260,6 @@ footer {
   padding: 10px 0;
   display: flex;
   bottom: 0;
-  font-size: 12px;
 }
 
 footer .row {
@@ -261,6 +270,8 @@ footer .row {
 
 footer .row p {
   padding-top: 15px;
+  font-family: "Lexend", sans-serif;
+  color: #202020;
 }
 
 footer ul {
@@ -283,8 +294,27 @@ footer i {
 }
 
 @media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .navbar-brand {
+    padding-left: 20px;
+  }
   .nav-menu {
-    font-size: 8px;
+    font-size: 18px;
+  }
+  .nav-menu a {
+    margin: 5px 0;
+    padding: 5px 2px;
   }
   footer div {
     text-align: center;
