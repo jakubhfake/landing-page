@@ -21,6 +21,10 @@ body {
   padding: 0;
 }
 
+section {
+  margin: 50px 0;
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -49,11 +53,13 @@ h4 {
   font-size: 20px;
   margin: 20px 0 10px 0;
   font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
 }
 
 p {
   font-family: "Noto Serif", serif;
   margin: auto;
+  color: #979393;
 }
 
 /* Navigation */
@@ -242,8 +248,12 @@ header {
   background-color: white;
 }
 
-.port-text h4 {
-  margin: 0;
+.port-item h4 {
+  margin: 0px;
+}
+
+.port-item p {
+  padding-bottom: 15px;
 }
 
 .port-item img {

@@ -38,6 +38,10 @@ body {
     padding: 0;
 }
 
+section {
+    margin: 50px 0;
+}
+
 .btn {
     position: relative;
     display: inline-block;
@@ -66,11 +70,13 @@ h4 {
     font-size: 20px;
     margin: 20px 0 10px 0;
     font-family: $font-text;
+    font-weight: 700;
 }
 
 p {
     font-family: $font-header-3;
     margin: auto;
+    color: $color-two;
 }
 
 
@@ -271,8 +277,12 @@ p {
     background-color: $color-light;
 }
 
-.port-text h4 {
-    margin: 0;
+.port-item h4 {
+    margin: 0px;
+}
+
+.port-item p {
+    padding-bottom: 15px;
 }
 
 .port-item img {
@@ -296,6 +306,7 @@ footer .row {
 
 footer .row p {
     padding-top: 15px;
+
 }
 
 
