@@ -1,9 +1,12 @@
 /* Varibles */
 
-$font-logo: 'Pacifico', cursive;
-$font-header-3: 'Noto Serif', serif;
+$font-text: 'Noto Serif', serif;
 $font-menu: 'Open Sans', sans-serif;
-$font-text: 'Inconsolata', sans-serif;
+$font-logo: 'Pacifico', cursive;
+$font-h2: 'Lexend', sans-serif;
+$font-h3: 'Bitter', serif;
+$font-h4: 'Inconsolata', sans-serif;
+
 
 $color-text: white;
 $color-brand:gold;
@@ -38,10 +41,6 @@ body {
     padding: 0;
 }
 
-section {
-    margin: 50px 0;
-}
-
 .btn {
     position: relative;
     display: inline-block;
@@ -57,24 +56,37 @@ section {
     transition: $transition;
 }
 
-h2 {
+h1 {
+    text-transform: uppercase;
     font-family: $font-menu;
-    font-size: 45px;
+    font-size: 78px;
+    margin: 0;
+ }
+
+h2 {
+    font-family: $font-h2;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 100px;
+}
+
+h3 {
+    font-family: $font-h3;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0;
 }
 
 h4 {
     font-size: 20px;
     margin: 20px 0 10px 0;
-    font-family: $font-text;
-    font-weight: 700;
+    font-family: $font-h4;
+    font-weight: 800;
 }
 
 p {
-    font-family: $font-header-3;
+    font-family: $font-text;
     margin: auto;
     color: $color-two;
 }
@@ -106,7 +118,7 @@ p {
 /* 1 level */
 .nav-menu {
     padding: 0;
-    margin: 0;
+    margin: 0 40px;
     font-size: 18px;
     list-style-type: none;
     font-family: $font-menu;
@@ -184,20 +196,7 @@ p {
     text-align: center;
  }
 
- .header-text h3 {
-     font-family: $font-header-3;
-     font-size: 40px;
-     margin: 0;
- }
-
- .header-text h1 {
-    text-transform: uppercase;
-    font-family: $font-menu;
-    font-size: 78px;
-    margin: 0;
- }
-
-/* Header button */
+ /* Header button */
 
 .btn-one {
     text-transform: uppercase;
@@ -220,14 +219,8 @@ p {
     color: $color-dark;
     /*font-family: $font-menu;*/
     text-align: center;
-}
-
-.services h2 {
-    font-size: 45px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .services .row {
@@ -236,10 +229,6 @@ p {
 
 .serv-item {
     padding: 0 30px;
-}
-
-.serv-item p {
-    text-align: justify;
 }
 
 .serv-sign {
@@ -263,26 +252,25 @@ p {
 
 .portfolio {
     background-color: $color-port;
-    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .grid {
+    padding-top: 50px;
     display: grid;
     margin: 20px;
     grid-template-columns: repeat(auto-fill, minmax(290px ,auto));
-    grid-gap: 30px;
+    grid-gap: 50px 30px;
 }
 
 .port-item {
     background-color: $color-light;
+    padding-bottom: 15px;
 }
 
 .port-item h4 {
-    margin: 0px;
-}
-
-.port-item p {
-    padding-bottom: 15px;
+    margin: 20px 0 10px 0;
+    line-height: 0;
 }
 
 .port-item img {

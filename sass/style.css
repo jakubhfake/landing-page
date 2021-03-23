@@ -21,10 +21,6 @@ body {
   padding: 0;
 }
 
-section {
-  margin: 50px 0;
-}
-
 .btn {
   position: relative;
   display: inline-block;
@@ -40,20 +36,33 @@ section {
   transition: all 1s;
 }
 
-h2 {
+h1 {
+  text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  font-size: 45px;
+  font-size: 78px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 100px;
+}
+
+h3 {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0;
 }
 
 h4 {
   font-size: 20px;
   margin: 20px 0 10px 0;
   font-family: "Inconsolata", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 p {
@@ -87,7 +96,7 @@ p {
 /* 1 level */
 .nav-menu {
   padding: 0;
-  margin: 0;
+  margin: 0 40px;
   font-size: 18px;
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
@@ -160,19 +169,6 @@ header {
   text-align: center;
 }
 
-.header-text h3 {
-  font-family: "Noto Serif", serif;
-  font-size: 40px;
-  margin: 0;
-}
-
-.header-text h1 {
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-size: 78px;
-  margin: 0;
-}
-
 /* Header button */
 .btn-one {
   text-transform: uppercase;
@@ -193,14 +189,8 @@ header {
   color: #202020;
   /*font-family: $font-menu;*/
   text-align: center;
-}
-
-.services h2 {
-  font-size: 45px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
-  margin-top: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .services .row {
@@ -209,10 +199,6 @@ header {
 
 .serv-item {
   padding: 0 30px;
-}
-
-.serv-item p {
-  text-align: justify;
 }
 
 .serv-sign {
@@ -234,26 +220,25 @@ header {
 /* Portfolio */
 .portfolio {
   background-color: #f5efef;
-  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .grid {
+  padding-top: 50px;
   display: grid;
   margin: 20px;
   grid-template-columns: repeat(auto-fill, minmax(290px, auto));
-  grid-gap: 30px;
+  grid-gap: 50px 30px;
 }
 
 .port-item {
   background-color: white;
+  padding-bottom: 15px;
 }
 
 .port-item h4 {
-  margin: 0px;
-}
-
-.port-item p {
-  padding-bottom: 15px;
+  margin: 20px 0 10px 0;
+  line-height: 0;
 }
 
 .port-item img {
